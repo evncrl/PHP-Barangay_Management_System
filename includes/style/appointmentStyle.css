@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eef1f7;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    color: black;
+}
+
+/* Main Section Container */
+.section-container {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Individual Content Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    color: black;
+}
+
+/* Headings */
+h2 {
+    text-align: center;
+    font-size: 22px;
+    color: #223F61;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #000000;
+}
+
+/* Input fields, textarea, and select */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #223F61;
+    outline: none;
+    box-shadow: 0 0 8px rgba(34, 63, 97, 0.3);
+    color: black;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(160deg, #2F5DC5, #3BBEE6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(160deg, #1a45a0, #2fa5d4);
+}
+
+/* Table Styling */
+.table-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    color: black;
+}
+
+table {
+    width: 150%;
+    max-width: 500px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+    color: black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+th {
+    background-color: #223F61;
+    color: white;
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+    color: black;
+}
+
+tr:hover {
+    background-color: #e1e6f0;
+}
+
+/* Status colors */
+.status-pending { color: orange; font-weight: bold; }
+.status-approved { color: green; font-weight: bold; }
+.status-rejected { color: red; font-weight: bold; }
+
+/* Delete Button */
+input[name="delete"] {
+    background: red;
+    transition: 0.3s;
+}
+
+input[name="delete"]:hover {
+    background: darkred;
+}
